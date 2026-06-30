@@ -14,9 +14,9 @@ Demo available [here](https://www.edu.louispetit.be/demo/rrt-rope-demo). More in
   <img src="img/method_3D.png" alt="Method_3D" width="70%"/>
 </p>
 
-This repository contains only the code for the HTML demo in 2D. For use in robotics applications or other planning pipelines, the RRT-Rope algorithm is available directly in the [Open Motion Planning Library (OMPL)](https://ompl.kavrakilab.org/index.html). It is implemented as the ropeShortcutPath function, documented [here](https://ompl.kavrakilab.org/classompl_1_1geometric_1_1PathSimplifier.html#a769875a6b05a77835ff0eaa2e948a221). Below is a minimal example of how to use it:
+This repository contains only the code for the HTML demo in 2D. For use in robotics applications or other planning pipelines, the RRT-Rope algorithm is available directly in the [Open Motion Planning Library (OMPL)](https://ompl.kavrakilab.org/index.html). It is implemented as the `ropeShortcutPath` function, documented [here](https://ompl.kavrakilab.org/classompl_1_1geometric_1_1PathSimplifier.html#a769875a6b05a77835ff0eaa2e948a221). Below is a minimal example of how to use it:
 
-```
+``` C++
 #include <ompl/geometric/planners/rrt/RRTConnect.h>
 #include <ompl/geometric/PathGeometric.h>
 
@@ -34,8 +34,18 @@ getPathSimplifier()->ropeShortcutPath(*sln);
 ```
 
 ## Reference
+If you find our repository useful, please consider giving it a star ⭐ and citing our paper in your work:
 
-- L. Petit, and A. Desbiens. RRT-Rope: A deterministic shortening approach for fast near-optimal path planning in large-scale uncluttered 3D environments. IEEE International Conference on Systems, Man, and Cybernetics (SMC). Melbourne, Australia, 2021. **Best Student Paper Award** and **Top 5 Best Paper** 
+``` bibtex
+@inproceedings{petit2021rrtrope,
+  title={{RRT-Rope}: A deterministic shortening approach for fast near-optimal path planning in large-scale uncluttered 3D environments},
+  author={Louis Petit and Alexis Lussier Desbiens},
+  booktitle={IEEE International Conference on Systems, Man, and Cybernetics (SMC)},
+  year={2021},
+  organization={IEEE}
+}
+```
+**Best Student Paper Award** and **Top 5 Best Paper**
 
 ## Author
 
